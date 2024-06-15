@@ -1,6 +1,10 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #navbar {
     display: none;
+  }
+
+  .logo{
+    font-size: 18px;
   }
 
   #hamburger-nav {
@@ -22,5 +26,10 @@
     justify-content: space-around;
     grid-template-columns: repeat(1, 70%);
     margin: 0.7rem;
+  }
+
+
+  .intro{
+    margin-top: 40px;
   }
 }

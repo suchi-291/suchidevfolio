@@ -345,7 +345,7 @@ main {
 footer {
  
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--main-gray);
   height: 3vh;
   display: flex;
@@ -355,5 +355,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  padding:1rem;
   background-color: var(--main-white);
 }

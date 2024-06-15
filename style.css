@@ -43,7 +43,7 @@ a {
   background: var(--main-gray);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   z-index: 10;
-  padding: 2em;
+  padding: 20px;
   padding-left: 2rem;
 }
 
@@ -56,14 +56,14 @@ a {
 .nav-list li a {
   text-decoration: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 18px;
   margin-right: 1em;
   font-weight: 100;
 }
 
 .logo {
   color: var(--main-white);
-  font-size: 2em;
+  font-size: 24px;
 }
 
 /* MOBILE NAV - HAMBURGER*/
@@ -164,13 +164,13 @@ main {
   height: 100vh;
   background-color: var(--main-white);
   color: var(--main-gray);
-  font-size: 1.8em;
+  
   gap: 2.2rem;
   text-align: center;
 }
 
 .welcome-section h1{
-  font-size: 1.5em;
+  font-size: 36px;
 }
 #socials-container {
   display: flex;
@@ -191,7 +191,7 @@ main {
   width: 10em;
   border: none;
   border-radius: 2rem;
-  font-size: 0.8em;
+  font-size: 16px;
   background-color: var(--main-gray);
   color: var(--main-white);
   cursor: pointer;
@@ -209,20 +209,19 @@ main {
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
-  font-size: 2.5em;
+  font-size: 32px;
 }
 
 .projects-section {
   text-align: center;
   height: 100vh;
-  font-size: 2rem;
   font-weight: 100;
 }
 
 
 
 .projects-section p{
-  font-size: 2.5rem;
+  font-size: 32px;
 }
 
 .projects {
@@ -250,19 +249,19 @@ main {
 }
 
 .card h4 {
-  font-size: 1.5rem;
+  font-size: 21px;
 }
 
 .card p {
   font-weight: 100;
-  font-size: 1.5rem;
+  font-size: 18px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card a {
   text-decoration: none;
   color: var(--main-white);
-  font-size: 0.5rem;
+  font-size: 18px;
 }
 
 .card .code-demo {
@@ -278,7 +277,6 @@ main {
 .intro {
   margin-top: 180px;
   margin-bottom: 60px;
-  font-size: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -288,7 +286,7 @@ main {
 }
 
 .intro h3 {
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .intro span {
@@ -306,7 +304,7 @@ main {
 
 .tweet-card-boundary {
   display: flex;
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: 100;
   flex-direction: row;
   justify-content: space-between;
@@ -323,7 +321,7 @@ main {
   margin: 2rem;
   transition: all 0.25s;
   justify-self: center;
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 
 .card-tweet {

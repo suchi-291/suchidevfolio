@@ -1,0 +1,343 @@
+:root {
+  --main-white: #ffffff;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #1a1f23;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /*color: var(--main-white);*/
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-gray);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 0.5em;
+  padding-left: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 0.2rem;
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  margin-right: 0.5rem;
+  font-weight: 100;
+}
+
+.logo {
+  color: var(--main-white);
+}
+
+/* MOBILE NAV - HAMBURGER*/
+.menu-links li {
+  list-style: none;
+}
+.menu-links li a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 10px;
+  margin-right: 0.5rem;
+  font-weight: 100;
+  transition: all 0.3 ease-in-out;
+  padding: 10px;
+}
+
+#hamburger-nav {
+  display: none;
+  background-color: var(--main-gray);
+  color: var(--main-white);
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 60%;
+  height: 1px;
+  background-color: var(--main-white);
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--main-gray);
+  width: 90px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:nth-child(2) {
+  opacity: 1;
+}
+
+.hamburger-icon span:last-child {
+  transform: none;
+}
+
+/*************************************************************************************/
+
+/* INDEX PROFILE SECTION*/
+main {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 92vh;
+  background-color: var(--main-white);
+  color: var(--main-gray);
+  font-size: 0.7rem;
+  gap: 1rem;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 100;
+  transition: all 300ms ease;
+  padding: 0.4rem;
+  width: 5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 0.5rem;
+  background-color: var(--main-gray);
+  color: var(--main-white);
+  cursor: pointer;
+}
+/*********************************************************************************************/
+
+/* WORK PAGE */
+
+.calender {
+  margin-top: 50px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.projects-section {
+  text-align: center;
+  height: 100vh;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.projects {
+  display: inline-grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 25%);
+  margin: 1rem;
+}
+.card {
+  border: solid;
+  border-width: 1px;
+  padding: 1rem 1.3rem;
+  text-align: center;
+  background-color: var(--main-gray);
+  border-radius: 0.42rem;
+  width: 100%;
+  margin: 1rem;
+  transition: all 0.25s;
+  justify-self: center;
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card h4 {
+  font-size: 0.6rem;
+}
+
+.card p {
+  font-weight: 100;
+  font-size: 0.65rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 0.5rem;
+}
+
+.card .code-demo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/*************************************************************************************/
+
+/* MY JOURNEY */
+
+.intro {
+  margin-top: 60px;
+  font-size: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.intro h3 {
+  font-size: 0.7rem;
+}
+
+.intro span {
+  color: rgb(0, 115, 255);
+}
+
+.tweets {
+  color: var(--main-white);
+  display: inline-grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 30%);
+  margin: 0.7rem;
+}
+
+.tweet-card-boundary {
+  display: flex;
+  font-size: 0.4rem;
+  font-weight: 100;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(218, 212, 212);
+}
+
+.tcard {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 1.3rem;
+  text-align: center;
+  background-color: var(--main-gray);
+  border-radius: 0.42rem;
+  width: 90%;
+  margin: 1rem;
+  transition: all 0.25s;
+  justify-self: center;
+  font-size: 0.4rem;
+}
+
+.card-tweet {
+  max-height: 15rem;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.card-tweet span {
+  color: skyblue;
+}
+.link-twitter {
+  color: rgb(215, 211, 211);
+  text-decoration: underline;
+}
+
+/**************************************************************************************/
+footer {
+  text-align: center;
+  font-size: 0.5rem;
+  color: var(--main-gray);
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-white);
+}
